@@ -1,0 +1,93 @@
+/* Allgemeine Stile */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url(https://wallpapercave.com/wp/wp12980965.jpg); /* Füge die URL des Hintergrundbilds ein */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 10px; /* Verhindert, dass Inhalte am Rand kleben */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Einladung */
+.invitation {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 15px; /* Reduzierte Polsterung für kleine Bildschirme */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 90%; /* Passt sich an kleinere Bildschirme an */
+}
+
+.invitation p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    line-height: 1.5; /* Verbessert die Lesbarkeit */
+}
+
+/* Details */
+.details {
+    margin: 40px 0; /* Etwas reduzierter Abstand */
+}
+
+.details p {
+    font-size: 1.5em; /* Verkleinert auf mobilen Geräten */
+    margin: 30px 0;
+    text-align: center;
+}
+
+.details span {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em; /* Kleinere Schriftgröße */
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Verkleinert die Schriftgröße */
+    }
+    
+    .invitation {
+        padding: 15px 10px; /* Weniger Polsterung für kleine Bildschirme */
+    }
+    
+    .invitation p {
+        font-size: 1em; /* Kleinere Schriftgröße für Lesbarkeit */
+    }
+    
+    .details p {
+        font-size: 1.2em; /* Noch kleinere Schriftgröße */
+    }
+    
+    footer {
+        font-size: 0.9em; /* Passt die Fußzeile an */
+    }
+}
